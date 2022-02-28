@@ -11,7 +11,7 @@ class theme_all extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     theme: ThemeData(
-      textTheme: TextTheme(
+      textTheme:const  TextTheme(
         headline6: TextStyle(
           color: Colors.amber
         
@@ -70,7 +70,7 @@ class theme_all extends StatelessWidget {
            ],
          ),
 
-
+//dfsdfafdas
 
 
             
