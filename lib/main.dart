@@ -1,13 +1,15 @@
-// ignore_for_file: unnecessary_const
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/colors.dart';
-import 'package:flutter_application_1/increment_widegt.dart';
+//import 'package:flutter_application_1/buttton&icon%20button.dart';
+// import 'package:flutter_application_1/colors.dart';
+// import 'package:flutter_application_1/increment_widegt.dart';
 import 'package:flutter_application_1/lesson_one..dart';
+import 'package:flutter_application_1/themematerial.dart';
+
 //import 'package:flutter_application_1/slivers.dart';
 //import 'package:flutter_application_1/lesson_one..dart';
 
-void main() => runApp(const LessonOne());
+void main() => runApp( theme_all());
 
 class MyApp extends StatefulWidget {
    MyApp({Key? key}) : super(key: key);
