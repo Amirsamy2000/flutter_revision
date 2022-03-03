@@ -9,11 +9,11 @@ class Buttons extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
 
-        buttonTheme:  const ButtonThemeData(
+       /*  buttonTheme:  const ButtonThemeData(
        splashColor: Colors.black38,
        buttonColor: Colors.amber
 
-        )
+        ) */
       /* elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
            fixedSize:Size.fromWidth(100),
@@ -183,15 +183,66 @@ class Buttons extends StatelessWidget {
                   ),
                 ElevatedButton(onPressed: (){}, child: const Text('new e')),
                 OutlinedButton(onPressed: (){}, child: const Text('new o')),
-               TextButton(onPressed: (){}, child: const Text('new t'))
-                   
+               TextButton(onPressed: (){}, child: const Text('new t')),
+                   FloatingActionButton.extended(
+          label: const Text('add'),
+             icon:  const Icon(Icons.add),
+           
+          tooltip:'Float',
+          backgroundColor: Colors.deepPurple,
+          foregroundColor: Colors.red,
+        splashColor: const Color.fromARGB(255, 87, 67, 7),
+          hoverColor: Colors.brown,
+         focusColor: Colors.pink,
+         focusElevation: 40,
+         hoverElevation: 80,
+         elevation: 30,
+         
+         //mouseCursor: SystemMouseCursors.allScroll,
+     autofocus:true,
+     shape: const RoundedRectangleBorder(
+       borderRadius: BorderRadius.all(Radius.elliptical(50,10)),
+       side:BorderSide(color: Colors.black87,width: 6,style: BorderStyle.solid),
+      
+     ),
+       
+materialTapTargetSize:MaterialTapTargetSize.padded,
+
+          onPressed: (){}),
                 ],
               )
             ],
           ),
         ),
+        floatingActionButton: FloatingActionButton.extended(
+          label: const Text('add'),
+             icon:  const Icon(Icons.add),
+           
+          tooltip:'Float',
+          backgroundColor: Colors.deepPurple,
+          foregroundColor: Colors.red,
+        splashColor: const Color.fromARGB(255, 87, 67, 7),
+          hoverColor: Colors.brown,
+         focusColor: Colors.pink,
+         focusElevation: 40,
+         hoverElevation: 80,
+         elevation: 30,
+         extendedIconLabelSpacing: 40,
+         extendedPadding: const EdgeInsets.all(10),
+         //mouseCursor: SystemMouseCursors.allScroll,
+     autofocus:true,
+     shape: const RoundedRectangleBorder(
+       borderRadius: BorderRadius.all(Radius.elliptical(50,10)),
+       side:BorderSide(color: Colors.black87,width: 6,style: BorderStyle.solid),
+      
+     ),
+       
+materialTapTargetSize:MaterialTapTargetSize.padded,
+
+          onPressed: (){}),
+          floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
       ),
     );
- //adsfsdf
+
   }
 }

@@ -25,7 +25,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String url =  'https://www.bing.com/th?id=OIP.PBwP1trM6-aYvyJkBxt9QQHaFD&w=169&h=110&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2';
+ final String url =  'https://www.bing.com/th?id=OIP.PBwP1trM6-aYvyJkBxt9QQHaFD&w=169&h=110&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2';
 double h=100,w=150;
   void _incrementCounter() {
     setState(() {
@@ -63,7 +63,7 @@ double h=100,w=150;
            // splashRadius:10,
          
           ),
-          SizedBox(width: 20,),
+         const  SizedBox(width: 20,),
           IconButton(
             icon:const Icon(Icons.home_max_outlined,
           size: 40,
@@ -73,7 +73,7 @@ double h=100,w=150;
             tooltip: 'menu '
           ),
           ],),
-          padding:  EdgeInsets.all(7),
+          padding:  const EdgeInsets.all(7),
          height: h,
           width: w,
 decoration: BoxDecoration(
@@ -90,7 +90,7 @@ border: Border.all(
         
       ),
      
-   boxShadow:  [
+   boxShadow: const  [
    BoxShadow(
      color: Colors.red,
      blurRadius: 80,
