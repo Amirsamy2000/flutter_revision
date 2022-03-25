@@ -11,6 +11,7 @@ class Bottom_sheet extends StatelessWidget{
    appBarTheme: const AppBarTheme(
     titleTextStyle: TextStyle(
        fontFamily: 'OpenSans',
+
     )
    )
    ),
